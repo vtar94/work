@@ -1,0 +1,77 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family:'微软雅黑';
+}
+header{z-index:100;}
+#ull{
+    list-style-type: none;
+    width:100%;
+    height:80px;
+    background-color:#000;
+}
+#ull .ulword{
+    float:right;
+    width:100px;
+}
+.ulword div{
+    display:block;
+    width:100px;
+    height:80px;
+    padding-top:35px;
+   padding-left:22px;
+    box-sizing: border-box;
+    color:#fff;
+}
+.ulword div:hover{
+    border-bottom:solid 3px #0d5491;
+}
+.ulword dl{
+    z-index:9;
+    
+}
+.ulword div a{color:#fff;}
+#ull .ulword dl dd{
+    float:right;
+    margin-left:100px;
+
+}
+#ull .ulword dl dd:hover{
+  color:#0e519c;
+}
+li #img{
+     width: 400px;
+     height:50px;
+    margin-left:50px;margin-top:15px;
+
+ }
+.ulword dl{
+    width:100%;
+    height:70px;
+    background-color:rgba(0,0,0,.7);
+    position:absolute;
+    right:0px;
+    top:80px;
+    color:#fff;
+    width:100%;
+    display:none;
+    text-align:center;
+    line-height:70px;
+    padding-right:20px;
+}
+.place{width: 100%;height: 70px;background: #EDF6FA;line-height: 50px;margin: 0 auto;padding-left:10%;}
+.place span{width: 50px;float: left;font-family: '楷体';font-size: 16px;}
+.placeul{float: left;}
+
+.placeul li{float: left;}
+.placeul li a{
+    font-family: '楷体';
+    color:#000000;
+    font-size: 15px;
+    text-decoration:none;
+}
+#aa{
+    width:100%;
+    height:300px;
+    background-color: blue;
+}

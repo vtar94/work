@@ -1,0 +1,35 @@
+@CHARSET "UTF-8";
+#head_img{margin: 0 auto;text-align: center;}
+        /*#head_img1{width: 200px ;height: 150px;}*/
+        #author,#title,#date,#image{text-align: center;font-size: 25px;}
+        #image{height:30px;margin-top: -15px;margin-left: 4px;}
+        #author_t,#title_t,#date_t{font-size: 20px;margin-top: 20px;height: 23px;}
+        #date_t{width: 244px;height: 23px;}
+        #content{text-align: center ;width: 335px;margin: 0 auto;}
+        #content_t{font-size: 25px;float: left;}
+        #image_t{width: 251px;margin-top: 30px;border: 1px solid silver;line-height: 30px;}
+        #btn_b{width: 80px;height: 30px;border: 1px solid rebeccapurple; font: 20px "微软雅黑" ;background: royalblue;float: right;}
+        #btn {text-align: center;margin-top: 20px;width: 700px;margin: 0 auto;}
+
+        .float{
+            float:left;
+            width : 150px;
+            height: 150px;
+            overflow: hidden;
+            border: 1px solid #CCCCCC;
+            border-radius: 10px;
+            /*padding: 5px;*/
+            margin: 5px;
+
+        }
+        img{
+            position: relative;
+
+
+        }
+        .result{
+            width: 150px;
+            height: 150px;
+            text-align: center;
+           /* box-sizing: border-box;*/
+        }

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.dst.dao.RecruitmentMapper">
+
+	<resultMap id="Recruitment" type="com.dst.bean.Recruitment">
+		<id column="rid" property="rId" />
+		<result column="name" property="name" />
+		<result column="type" property="type" />
+		<result column="address" property="address" />
+		<result column="num" property="num" />
+		<result column="date" property="date" />
+		<result column="duty" property="duty" />
+		<result column="requirement" property="requirement" />
+		<result column="salary" property="salary" />
+		<result column="welfare" property="welfare" />
+	</resultMap>
+
+	<select id="selectAll" resultMap="Recruitment">
+		select * from recruitment
+	</select>
+
+	<insert id="insertRecruitment" parameterType="Recruitment"
+		useGeneratedKeys="true" keyProperty="rId">
+		insert into
+		recruitment(name,type,address,num,date,duty,requirement,salary,welfare)
+		values(#{name},#{type},#{address},#{num},#{date},#{duty},#{requirement},#{salary},#{welfare})
+	</insert>
+
+	<select id="selectOne" resultMap="Recruitment" parameterType="_int">
+		select * from recruitment where rid=#{id}
+	</select>
+
+	<update id="updateRecruitment" parameterType="Recruitment">
+		update recruitment
+		set
+		name=#{name},type=#{type},address=#{address},num=#{num},date=#{date},duty=#{duty},requirement=#{requirement},
+		salary=#{salary},welfare=#{welfare} where rid=#{rId}
+	</update>
+	
+	<delete id="deleteRecruitmentById" parameterType="_int">
+		delete from recruitment  where rid=#{rId}
+	</delete>
+</mapper>

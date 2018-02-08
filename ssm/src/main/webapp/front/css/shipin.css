@@ -1,0 +1,98 @@
+#line{width:100%;clear:both;
+height:2px;
+background-color: #fff;}
+body{font-family: '微软雅黑'}
+.gwidth{width: 970px;margin: 0 auto}
+.weizhi{height: 60px;border-bottom: 1px #ccc solid;}
+.weizhi h1{float: left;margin-top: 20px;}
+.weizhi .sou{float: right;margin-top: 29px;}
+.weizhi h1 i{margin-right: 21px;}
+.weizhi h1 span{font-size: 14px;color: #ccc;}
+.top{clear:both;width: 100%;height: 414px;background: #000;color: #fff;}
+/*.sou{color: #fff}*/
+.sou{font-size: 0px;}
+.sou select{color: #000;height: 25px;margin-top: 1px;width: 60px;font-size: 12px;border:none;padding-top: 2px;padding-left: 6px;}
+.sou input{background: #fff;color: #000;height: 20px;border-left: 1px solid #ccc;display: inline-block;font-size: 14px;height: 25px;}
+#int{width: 190px;padding-left: 5px;}
+#sub{width: 30px;}
+.video{height: 300px;margin-top: 30px;}
+.lunbo{width: 100%;height: 100%;border-radius: 3px;}
+.lunbo div{width: 70%;height: 100%;float: left;}
+.lunbo div img{width: 100%;height: 100%;}
+.lunbo ul{width: 30%;height: 100%;float: left;background: #373737}
+.lunbo ul li{width: 100%;height: 19.8%;text-align: center;line-height: 50px;border-bottom: 1px solid #ccc;}
+.lunbo ul li i{margin-left:-20px;}
+.lunbo ul .active{border-left: 3px solid #0054A5;margin-left: -3px}
+.left{width: 70%;float: left;}
+.cent-left{width:100%;height:280px;margin-top: 30px;}
+.title{width: 100%;border-bottom: 1px solid #ccc;height: 36px;margin-bottom: 20px;}
+.title h3{float: left;padding:0px 10px;background-color:#C69550;border-radius:5px;color:#fff;}
+.title span{display: inline-block;float: right;line-height: 36px;}
+.shipin{width: 100%;height: 200px;color:#0d5491;}
+.shi-left{width: 200px;float: left;}
+.shi-left img{width: 200px;height:150px;border:solid 1px #2489C8;border-radius: 3px; }
+.shipin p{width: 100%;color:#005BAC;}
+.shi-left p{font-size: 16px;margin-top: 10px;}
+.shi-right{width: 460px;float: left;}
+.shi-right-top{width: 120px;float: left;margin-left: 30px;margin-bottom: 20px;}
+.shi-right-top img{border:solid 1px #ccc;border-radius: 3px;}
+.shi-right-top p{font-size: 14px;margin-top: 10px;}
+.shi-right img{width: 120px;height:90px; }
+.shi-right-bot{width: 430px;float: left;margin-left: 30px;}
+.shi-right-bot span{float: left;}
+.shi-right-bot i{float: right;}
+.shi-right-bot p a{color:#0d5491;}
+.news{width: 249px;margin-top: 24px;float: left;margin-left:40px;}
+.xin{width: 249px;margin-top: 24px;float: left;}
+.bang,.pai{width: 100%;}
+.pai{height: 42px;line-height: 42px;}
+.pai h1{float: left;}
+.pai div{float: right;}
+.pai div span{margin-right: 3px;}
+.dl,.xin ul{border:1px solid #ccc;}
+.dl dd{color:#005BAC;margin-left: 20px;height: 30px;line-height: 30px;font-size: 16px;border-bottom: 1px solid #ccc;margin-right: 10px;}
+.dl dd span{width: 18px;height: 18px;background: #ccc;display: inline-block;line-height:16px;text-align: center;color: #fff;margin-right: 10px;border-radius: 3px;}
+.dl dd .sred{background: #005BAC;}
+.dl dd .syellow{background: #005BAC;}
+.dl dd .sblue{background: #005BAC;}
+.xin ul li{height: 75px;border-bottom: 1px solid #ccc;margin: 10px;}
+.xin ul li div{float: left;}
+.xin ul li div p{line-height: 30px;}
+.xin ul li .tp{margin-right: 15px;}
+.xin ul li div img{width: 80px;height: 60px;}
+.hui{color:#ccc;}
+.clearfix p a{
+    color:#0e519c;
+}
+.phone{display: none;}
+@media (max-width: 768px){
+	.pc{display: none;}
+	.phone{display: block;}
+	.phone-top{width: 100%;height: 50px;background: #000;border-bottom: 5px #AE81FF solid;text-align: center;line-height: 50px;font-size: 20px;color: #fff;position: fixed;top: 0;z-index: 10}
+	.phone-video{width: 100%;height: 300px;margin-top: 50px;position:relative;}
+	.phone-video p{text-align: center;font-size: 14px;line-height: 30px;height: 30px;font-weight: bold;}
+	.phone-video span{position: absolute;right: 5px;bottom: 5px;font-size: 12px;}
+	.phone-video img{width: 100%;height: 80%;}
+
+	.every{margin-top:10px;border-bottom:solid 1px #ccc;border-radius: 5px;height:90px;}
+	.every .imgdiv{float:left;width:50%;height:100%;}
+	.every .imgdiv img{
+		width:90%;
+		height:90%;
+		margin-left: 5%;
+		border-radius: 5px;
+	}
+ .every .imgword{
+	float:left;
+	width:50%;
+	height:100%;
+	position: relative;
+
+}
+ .imgword p{font-weight: bold;line-height:30px;width: 90%;font-size: 14px;margin: 0 auto}
+	.imgword span{font-size:10px;color:#423A38;position: absolute;right: 5px;bottom: 5px;}
+ .clear{
+	 clear:both;
+ }
+
+	}

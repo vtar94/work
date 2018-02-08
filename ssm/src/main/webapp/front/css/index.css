@@ -1,0 +1,88 @@
+
+#caidan{display: none;}
+.header{width: 100%;height: 100px;position:fixed;z-index: 100;background: rgba(0,0,0,.5);}
+.header1{display: none;}
+.logo{width: 30%;height: 100px;float: left;}
+.logo img{width: 100%;height: 50px;margin-top: 25px;margin-left: 50px}
+.head-nav{width: 55%;height: 100%;float: right;}
+.head-nav ul{width: 100%;height: 100%;}
+.head-nav ul li{width: 13%;height: 100%;float: left;text-align: center;}
+.head-nav ul li a{width:100%;height: 100%;line-height: 100px;font-size: 16px;font-weight: bold;color: #fff;float: left;}
+.head-nav ul li a span{width:100%;height: 100%;line-height: 100px;font-size: 16px;font-weight: bold;color: #fff;float: left;}
+.bottom{width: 90%;height: 60vh;overflow: hidden;position: relative;margin:0 auto}
+.bottom-list{width: 500%;height: 60vh;overflow: hidden;position: relative;}
+.bottom-list dd{float: left;}
+.bottom-list dt{position: absolute;left: 9%;top:10px;color: #fff;font-size: 24px}
+
+.bottom-list dd img{width: 100vw;height: 60vh;}
+.bottom span{width: 50px;height: 50px;background:rgba(255,255,255,.5);display: inline-block;line-height: 50px;text-align: center;}
+.bottom .btn-left{position: absolute;left: 1%;top: 45%}
+.bottom .btn-right{position: absolute;right: 1%;top:45%}
+.footer-bot{width: 100%;height: 38vh;background:rgba(0,0,0,.7);margin-top:20px;position: relative;font-size: 10px}
+.footer-bot dl{width: 80%;height: 40%;color: #fff;margin:0 auto;margin-top: 2%;margin-bottom: 3%;}
+.footer-bot dl dd{width: 16%;height: 100%;float: left;}
+.footer-bot dl dd ul{width: 80%;height: 100%;margin: 0 auto;text-align:left;}
+.footer-bot dl dd ul li {margin: 1vh 0;}
+
+.footer-bot dl dd ul .li {font-size: 16px;font-family: "微软雅黑";font-weight: bold;}
+.footer-bot dl dd ul li a{color: #fff;text-decoration: none;}
+.footer-bot dl dd ul li a:hover{color: #006Dc0;text-decoration: none;}
+.bottom-bot-02 a{text-decoration: none;}
+/*联系我们*/
+.mapBox{height: 800px;overflow: hidden;}
+	.mapBox #map{width: 100%;height: 850px;}
+
+	.posr{position: relative;}
+	.red{color: #c6010a !important;}
+	.addressBox{background: #fff;position: absolute;top: 55px;right: 50%;margin-right: -480px;
+		width: 340px;padding: 30px;font-size: 14px;color: #333;}
+
+	.s-tab-ul{border-bottom: 1px solid #000;*zoom:1;margin-bottom: 20px;}
+	.s-tab-ul:after,.s-tab-ul:before{display:block; content:"clear"; height:0; clear:both; overflow:hidden; visibility:hidden; }
+	.s-tab-ul li{float: left;height: 43px;line-height: 41px;margin: 0 18px;}
+	.s-tab-ul li span{display: inline-block;padding: 0 10px;cursor: pointer;}
+	.s-tab-ul li.on span{border-bottom: 5px solid #000;}
+
+	.tab-address h3{font-size: 22px;font-weight: normal;margin-bottom: 10px;}
+	.tab-address h4{font-size: 18px;font-weight: normal;line-height: 1.6em;margin-bottom: 10px;}
+	.tab-address h4 b{font-size: 30px;color: #c7000b;}
+	.tab-address p{padding-bottom: 10px;overflow: hidden;line-height: 24px;font-size: 14px;}
+
+	.message-dl{margin-top: 20px;}
+	.message-dl dt{font-size: 22px;margin-bottom: 10px;}
+	.message-dl dd{position: relative;margin-bottom: 10px;}
+	.message-dl input,.message-dl textarea{color: #666;width: 100%;padding: 0 10px;border: 1px solid #000;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-o-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	.message-dl input{height: 48px;line-height: 48px \9;}
+	.message-dl textarea{padding: 10px;height: 120px;}
+
+	.message-dl .sbtn2{position: absolute;right: 0;bottom: 15px;background: #c7000b;color: #fff;
+		width: 70px;height: 35px;text-align: center;border: 0;font-weight: bold;cursor: pointer;}
+	.recruit{width: 100%;position: relative;height: 356px}
+	.recruit li{width: 50%; float: left}
+	.recruit li span{font-weight: bold;text-align:center;cursor: pointer;}
+	.recruit li .span{border-bottom: 2px solid red}
+	.recruit li .neirong{position: absolute;left: 0;top:30px;display: none;}
+	.recruit li #none{position: absolute;left: 0;top:30px;display: none;display: block;}
+
+
+@media (max-width: 768px){
+	.header1{display: block;}
+	.left-head{background: #494A5F;}
+	.header{display: none;}  
+	.logo{width: 5rem;height: 2rem;float: left;line-height: 2rem}
+	.logo a{width: 100%;height: 100%;}
+	.logo img{width: 100%;height: 60%;margin: 0;margin-left: 10px;}
+	#caidan,#caidan1{display: block;position: absolute;right: 7px;font-size: 24px;color: #fff;top:5px;}
+	.head-nav{width: 16rem;height: 5rem;float: left;position: absolute;background:rgba(255,255,255,.8);top:2rem;opacity: 0;transition: 0.35s;}
+	.head-nav ul{width: 100%;height: 100%;margin-top: -1rem}
+	.head-nav ul li{width: 5rem;height: 1.5rem;float: left;text-align: center;}
+	.head-nav ul li a{width:100%;height: 100%;font-size: 12px;font-weight: bold;color: #000;float: left;}
+	.head-nav ul li a span{width:100%;height: 100%;font-size: 12px;font-weight: bold;color: #000;float: left;}
+
+	.head-nav ul li a .span{width:100%;height: 100%;font-size: 12px;font-weight: bold;color: #000;}
+}

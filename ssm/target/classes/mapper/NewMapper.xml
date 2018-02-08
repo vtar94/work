@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.dst.dao.NewMapper">
+
+	<resultMap id="New" type="com.dst.bean.New">
+		<id column="id" property="newId" />
+		<result column="author" property="author" />
+		<result column="title" property="title" />
+		<result column="date" property="date" />
+		<result column="content" property="content" />
+		<result column="img" property="image" />
+	</resultMap>
+
+	<!-- 添加新闻 -->
+	<insert id="insertNew" useGeneratedKeys="true" parameterType="New"
+		keyProperty="newId">
+		insert into news(author,title,date,content,img)
+		values(#{author},#{title},#{date},#{content},#{image})
+	</insert>
+
+	<!-- 查询新闻列表 -->
+	<select id="selectAll" resultMap="New">
+		select * from news
+	</select>
+
+	<select id="selectById" parameterType="int" resultMap="New">
+		select *
+		from news where id=#{id}
+	</select>
+
+	<update id="updateNew" parameterType="New">
+		update news
+		set author =#{author},
+		title = #{title},
+		date = #{date},
+		content = #{content},
+		img =#{image}
+		where id = #{newId}
+	</update>
+
+	<delete id="deleteNew" parameterType="int">
+		delete from news where id =#{id}
+	</delete>
+</mapper>

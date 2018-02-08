@@ -1,0 +1,213 @@
+<!DOCTYPE html><html class=''>
+<head><meta charset='UTF-8'>
+
+<script src="../zp/prefixfree.min.js"></script>
+<style class="cp-pen-styles">
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+/* fontawesome */
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+  font-size:21px;
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 24px;
+}
+
+body{
+  margin:0px;
+  font-family: Arial, Helvetica, sans-serif;
+  background:#E5EBEF;
+}
+
+div .sidebar{
+  background:#29343A;
+  width:80px;
+  position:fixed;
+  height:100%;
+}
+div .content{
+  margin-left:80px;
+  padding-top:10px;
+  padding-left:20px;
+  padding-right:80px;
+}
+
+.content #contentText{
+  width:100%;
+  border:none;
+  min-height:200px;
+  
+  border-radius:10px;
+  
+  padding: 20px;
+  outline: none; 
+  resize: none;
+  
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:16px;
+  
+  line-height:180%;
+  margin-bottom:30px;
+  margin-top:30px;
+  transition:.2s;
+}
+
+.content #contentText:focus{
+  background:white;
+  box-shadow: inset 0px 0px 4px -1px black;
+}
+.content #contentText:hover{
+  background:white;
+  box-shadow: inset 0px 0px 4px -1px black;
+}
+
+.textEditing{
+  margin-left:8px;
+}
+
+.textEditing input{
+  display:none;
+}
+
+.textEditing span{
+  margin:0px;
+  margin-left:-5px;
+  cursor:pointer;
+}
+
+
+.textEditing input:first-child + label span:after {
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+.textEditing input:nth-last-child(2) + label span:after {
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 7px;
+}
+
+.textEditing span:after {
+	content: "";
+	display:inline-block;
+
+	width: 65px;
+	height: 50px;
+  
+  border-color:#B8C3CB;
+  border-width:1px;
+  border-style:solid;
+  background-color:#F2F6F8;
+}
+
+.textEditing input:checked + label span:after {
+    background-color:#29343A;
+  color:#fff;
+}
+.textEditing input:checked + label span {
+  color:#fff;
+}
+
+.textEditing span:hover:after {
+    background-color:white;
+}
+
+.finishButton a:hover{
+   box-shadow:inset 0px 0px 3px black;
+}
+
+#publish{
+    background-color: #57D36B;
+    margin-left:80px;
+}
+#save{
+    background-color: #62B1DF;
+    margin-left:10px;
+}
+#delete{
+    background-color: #E37668;
+    position:absolute;
+    right:50px;
+}
+
+input{
+   outline: none; 
+}</style></head><body>
+<div class="main"> 
+ 
+ 
+  <div class="content">
+   
+    <div class="textEditing">
+      
+      <input type="checkbox" id="bold"><label for="bold"><span class="fontawesome-bold"></span></label></input>
+      <input type="checkbox" id="italic"><label for="italic"><span class="fontawesome-italic"></span></label></input>
+      <input type="checkbox" id="underline"><label for="underline"><span class="fontawesome-underline"></span></label></input>
+      <input type="radio" name="textStyle" id="left" checked><label for="left"><span class="fontawesome-align-left"></span></label></input>
+	  <input type="radio" name="textStyle" id="center"><label for="center"><span class="fontawesome-align-center"></span></label></input>
+      <input type="radio" name="textStyle" id="right"><label for="right"><span class="fontawesome-align-right"></span></label></input>
+      <input type="radio" name="textStyle" id="justify"><label for="justify"><span class="fontawesome-align-justify"></span></label></input>
+
+      
+    </div>
+  <textarea rows="5" cols="8" id="contentText"></textarea>
+  </div>
+</div>
+
+
+<script src="../common/lib/jquery-1.9.0.min.js"></script>
+<script>
+
+$( "#contentText" ).keyup(function() {
+  $( "#exitMenuCheckbox" ).prop('checked', true);
+});
+
+
+$( "#bold" ).change(function() {
+  if($('#bold').prop('checked')){
+    $("#contentText").css("font-weight","bold");
+  }else{
+    $("#contentText").css("font-weight","normal");
+  }
+});
+
+$( "#italic" ).change(function() {
+  if($('#italic').prop('checked')){
+    $("#contentText").css("font-style","italic");
+  }else{
+    $("#contentText").css("font-style","normal");
+  }
+});
+
+$( "#underline" ).change(function() {
+  if($('#underline').prop('checked')){
+    $("#contentText").css("text-decoration","underline");
+  }else{
+    $("#contentText").css("text-decoration","none");
+  }
+});
+
+$( "#left" ).click(function() {
+  $("#contentText").css("text-align","left");
+});
+$( "#center" ).click(function() {
+  $("#contentText").css("text-align","center");
+});
+$( "#right" ).click(function() {
+  $("#contentText").css("text-align","right");
+});
+$( "#justify" ).click(function() {
+  $("#contentText").css("text-align","justify");
+});
+
+$(document).on('scroll', function() {
+   $( "#exitMenuCheckbox" ).prop('checked', true);
+});
+
+$( "#delete" ).mouseup(function() {
+  $("#articleHeaderName").text("Create New Article");
+
+  $("#contentText").text("Clered");
+});
+</script>
+</body></html>

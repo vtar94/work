@@ -1,0 +1,137 @@
+
+.clearfix:after, .container:after, .tab-nav:after {
+		  content: ".";
+		  display: block;
+		  height: 0;
+		  clear: both;
+		  visibility: hidden;
+		}
+
+		/* ==========
+		   Setup Page */
+		*, *:before, *:after {
+		  box-sizing: border-box;
+		}
+
+		body {
+		  font-family: "微软雅黑"
+		}
+
+		/* =================
+		   Container Styling */
+		.container {
+		  position: relative;
+		  background: white;
+		  padding: 3em;
+		}
+
+		/* ===========
+		   Tab Styling */
+		.tab-group {
+		  position: relative;
+		  border: 1px solid #eee;
+		  margin-top: 2.5em;
+		  border-radius: 0 0 10px 10px;
+		}
+		.tab-group section {
+		  opacity: 0;
+		  height: 0;
+		  padding: 0 1em;
+		  overflow: hidden;
+		  transition: opacity 0.4s ease, height 0.4s ease;
+
+		}
+		.tab-group section.active {
+		  opacity: 1;
+		  height: auto;
+		  overflow: visible;
+		}
+
+		.tab-nav {
+		  list-style: none;
+		  margin: -2.5em -1px 0 0;
+		  padding: 0;
+		  height: 2.5em;
+		  overflow: hidden;
+		}
+		.tab-nav li {
+		  display: inline;
+		}
+		.tab-nav li a {
+		  top: 1px;
+		  position: relative;
+		  display: block;
+		  float: left;
+		  border-radius: 10px 10px 0 0;
+		  background: #eee;
+		  line-height: 2em;
+		  padding: 0 1em;
+		  text-decoration: none;
+		  color: grey;
+		  margin-top: .5em;
+		  margin-right: 1px;
+		  transition: background .2s ease, line-height .2s ease, margin .2s ease;
+		}
+		.tab-nav li.active a {
+		  background: #6EB590;
+		  color: white;
+		  line-height: 2.5em;
+		  margin-top: 0;
+		}
+		.container{
+			padding-left:0px;
+		}
+	
+		.cehui{
+			width:calc(100% - 200px);
+			float:right;
+			
+			margin-top: 20px;
+		}
+		.cehui #dili{
+			font-family:Calibri;
+			font-size: 18px;
+			width:130px;height:30px;
+			background-color:#373737;
+			background-size:150px 30px;
+			line-height:30px;
+			padding-left:10px;
+			color:#fff;
+			border-radius: 5px;
+
+		 }
+		.cehui .gk{width: 100%;margin-top:10px;border:solid 1px #ccc;border-radius: 5px;position: relative;}
+		.cehui .gk .p{position: absolute;bottom: 0;left: 0;}
+		.gk img{width: 100%;height: 65vh;}
+		.gk p{padding: 15px;font-size: 14px;line-height: 30px;background: rgba(0,0,0,.3);color: #fff; }
+		.container{
+
+		}
+			.imgtext{
+				width: 100%;
+				border-bottom:dotted 1px #ccc;
+				margin-bottom: 10px;
+			}
+		.imgtext .stitle{width: 60%;float: left;margin-top:30px;}
+		.imgtext .img{width:40%;float: left;height: 100%;text-align: center;vertical-align:middle;}
+       .imgtext img{
+		   width:80%;
+		   height:40vh;
+		  border-radius: 8px;
+		  margin:5% 0;
+		
+	   }
+	   .bg{
+		   font-family: STFangsong;
+		   font-size:20px;
+		   background-color:#6EB590;
+		   color:#fff;
+		   margin-bottom:18px;
+		   padding-left:30px;
+		   border-radius: 5px;
+	   }
+
+	   p{
+		   text-indent: 35px;
+
+	   }

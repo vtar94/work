@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!-- 引入外部配置文件 -->
+	
+	
+	<settings>
+		<!-- 设置自动转换为驼峰命名标识 -->
+		<setting name="mapUnderscoreToCamelCase" value="true"/>
+		<!-- 使用延迟加载 -->
+		<setting name="lazyLoadingEnabled" value="true"/>
+	</settings>
+	
+	<!-- 为类设置别名 -->
+	<typeAliases>
+		<!-- 默认类的别名为类名小写 -->
+		
+		<!-- 为该包下以及其子包的所有类设置默认别名 -->
+		<package name="com.dst.bean"/>
+		
+	</typeAliases>
+	
+
+</configuration>
